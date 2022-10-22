@@ -1,3 +1,4 @@
 [submodule "ecommerce-BIG2"]
 	path = ecommerce-BIG2
 	url = https://github.com/hientm177/ecommerce-BIG2
+	branch = develop
