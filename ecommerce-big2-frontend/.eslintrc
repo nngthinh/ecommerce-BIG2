@@ -1,0 +1,101 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "overrides": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "requireConfigFile": false,
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "babelOptions": {
+            "presets": [
+                "react-app"
+            ]
+        },
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+        "default-param-last": "off",
+        "max-len": "off",
+        "import/prefer-default-export": "off",
+        "implicit-arrow-linebreak": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error"
+        ],
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "object-curly-newline": "off",
+        "no-unused-vars": "warn",
+        "no-console": "warn",
+        "no-param-reassign": "off",
+        "func-names": "off",
+        "no-process-exit": "off",
+        "object-shorthand": "off",
+        "class-methods-use-this": "off",
+        "react/jsx-props-no-spreading": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true,
+                "optionalDependencies": false,
+                "peerDependencies": false
+            }
+        ],
+        "brace-style": [
+            "error",
+            "stroustrup"
+        ],
+        "react/jsx-filename-extension": [
+            2,
+            {
+                "extensions": [
+                    ".jsx",
+                    ".tsx",
+                    ".ts",
+                    ".js"
+                ]
+            }
+        ],
+        "react/function-component-definition": 0,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "./src"
+                ],
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        }
+    }
+}
